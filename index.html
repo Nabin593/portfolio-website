@@ -1,330 +1,490 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
-    <title>Nabin Ghimire</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/03ee3287ee.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin Ghimire | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body>
-
-    <section class="header">
-        <nav>
-            
-            <p style="">Nabin_Ghimire</p>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Nabin<span> Ghimire</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
                 <ul>
-                    <li><a href="#index.html">Home</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#skills">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
                 </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-
-        <div class="wrapper">
-        <div class="cols cols0">
-          <span class="topline">Hello</span>
-          <h1>I'm <span class="multiText"></span></h1>
-          <p>
-            I am Nabin Ghimire a Web Developer, Mobile app Developer, Designer and a
-            Student of Computer Science in Nepal. I am keen interested in
-            technology, coding, programming etc. since my childhood. And
-            everyday i have been improving my coding skillls with passion.
-          </p>
-          <a href="#contact">Contact Me</a>
+            </nav>
         </div>
-        <div class="cols cols0">
-          <div class="imgbox">
-        
-            <img src="Images/person-imagez.png" />
-          </div>
-        </div>
-      </div>
-    </section>
+    </header>
 
-
-    <!---------project section start------------>
-    <!-- speciality section starts  -->
-
-    <section class="speciality" id="speciality">
-
-        <h2>RunningProjects </h2>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img class="image" src="Images/zecommerce.jpg" alt="">
-                <div class="content">
-                    <img src="Images/xecom.jpg" alt="">
-                    <h3>online-Shopping Website</h3>
-                    <p>
-                        Online shopping is a form of electronic commerce which allows consumers to directly
-                        buy goods or services from a seller over the Internet using a web browser or a mobile app.
-                        Consumers find a product of interest by visiting the website of the retailer.
-
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Nabin Ghimire</h1>
+                    <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    <p>Welcome to my portfolio Website. I create amazing digital experiences that help businesses grow.
                     </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="Images/zschool.jpg" alt="">
-                <div class="content">
-                    <img src="Images/xschoolicon.jpg" alt="">
-                    <h3>School/College Website</h3>
-                    <p>
-                        It is a statutory requirement for schools/college to publish certain information on-line,
-                        on their website. The school website affects the overall image and reputation of your school at one place which can lead to increase in
-                        admissions.
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="Images/zportfolio.jpg" alt="">
-                <div class="content">
-                    <img src="Images/xportfolioicon.jpg" alt="">
-                    <h3>Portfolio Website</h3>
-                    <p>A portfolio website provides professional information about
-                    an individual or a company and presents a showcase of their work.</p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="Images/zhotel.jpg" alt="">
-                <div class="content">
-                    <img src="Images/xhotel.jpg" alt="">
-                    <h3>Hotel/Restaurant Website</h3>
-                    <p>A well-designed website is also a great source of information about guests, 
-                        their behavior, activities, the frequency of visits, etc
-                    </p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn" data-page="portfolio">View My Work</a>
+                        <a href="" class="btn btn-outline" data-page="contact">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- About Section -->
+        <section id="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/Profile.png" alt="Nabin Ghimire">
+                    </div>
+                    <div class="about-text">
+                        <h3>Hello! I'm Nabin Ghimire</h3>
+                        <p>I am a full-stack developer skilled in creating fast, responsive, and scalable web
+                            applications using modern frameworks. I specialize in building secure, high-performance APIs
+                            with ASP.NET Core, backed by clean and maintainable architecture. I focus on delivering
+                            reliable and optimized solutions with strong attention to performance and security. I also
+                            have deep expertise in SQL/T-SQL, designing efficient queries and stored procedures for
+                            data-driven systems. My work emphasizes clean code, scalability, and seamless integration
+                            across all layers of development.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <h4>Name:</h4>
+                                <p>Nabin Ghimire</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Email:</h4>
+                                <p>callmegnabin@gmail.com</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Age:</h4>
+                                <p>24</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>From:</h4>
+                                <p>Lalitpur-24, Nepal</p>
+                            </div>
+                        </div>
+                        <a href="https://www.nabinghimire1.com.np/Resume.pdf" class="btn" data-page="contact">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Web Development</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>SQL / T-SQL</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>JavaScript</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Angular JS</h4>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Asp.net</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Web API</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section">
+            <div class="container">
+                <h2>My Services</h2>
+                <div class="services-grid">
+                    <div class="service-card card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web-App Development</h3>
+                        <p>Custom website-App development using the latest technologies and frameworks to create fast,
+                            responsive, and scalable web applications.</p>
+                    </div>
+                    <div class="service-card card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>API Development</h3>
+                        <p>I specialize in building secure, scalable, and high-performance APIs using ASP.NET Core,
+                            creating clean architectures that integrate seamlessly with modern applications. I develop
+                            reliable and optimized API solutions with a strong focus on performance, security, and clean
+                            code practices.</p>
+                    </div>
+                    <div class="service-card card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>SQL/T-SQL</h3>
+                        <p>Experienced in designing optimized SQL queries and robust stored procedures for scalable
+                            database-driven applications. Strong focus on performance tuning and clean schema design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio-section">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">API Development</button>
+                    <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="/images/cross-platform.jpg" alt="Project 1" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p>Full-stack e-commerce solution with payment integration</p>
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <img src="images/API.jpg" alt="Project 2" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>API</h3>
+                            <p>API development for cross-platform application development and errorless services.</p>
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="graphic">
+                        <img src="images/Graphics.jpg" alt="Project 3" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete branding package for a tech startup</p>
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <!-- speciality section ends ---------->
-
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h4 class="title">My skills</h4>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills.</div>
-                    <br />
-                    <br />
-                    <a href="Resume.pdf">Download CV</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>ASP.NET</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line wp"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line python"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Angular Js</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line rjs"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Photoshop</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="line pshop"></div>
-                    </div>
-
-                </div>
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>Learn more about my background, skills, and professional journey</p>
             </div>
         </div>
+
+        <section>
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/Profile.png" alt="Nabin Ghimire">
+                    </div>
+                    <div class="about-text">
+                        <h3>Hello! I'm Nabin Ghimire</h3>
+                        <p>I am a full-stack developer skilled in creating fast, responsive, and scalable web
+                            applications using modern frameworks. I specialize in building secure, high-performance APIs
+                            with ASP.NET Core, backed by clean and maintainable architecture. I focus on delivering
+                            reliable and optimized solutions with strong attention to performance and security. I also
+                            have deep expertise in SQL/T-SQL, designing efficient queries and stored procedures for
+                            data-driven systems. My work emphasizes clean code, scalability, and seamless integration
+                            across all layers of development.</p>
+                        <p>My approach combines technical expertise with creative thinking to deliver solutions that not
+                            only look great but also perform exceptionally well.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <h4>Name:</h4>
+                                <p>Nabin Ghimire</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Email:</h4>
+                                <p>callmegnabin@gmail.com</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Age:</h4>
+                                <p>24</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>From:</h4>
+                                <p>Lalitpur-24, Nepal</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn" data-page="contact">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills-section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Web Development</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>SQL / T-SQL</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>JavaScript</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Angular JS</h4>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Asp.net</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Web API</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <!--------services-------------------------->
-
-
-
-
-    <section class="service" id="service">
-
-        <h1 class="heading"> Our <span>Services</span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img class="image" src="Images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
-                <div class="content">
-                    <img src="Images/308.jpg" alt="">
-                    <h3>Web Development</h3>
-                    <p> We focuses on making fully responsive website/web applications with 100% customer satisfaction.</p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="Images/wepppps.jpg" alt="">
-                <div class="content">
-                    <img src="Images/app icon.png" alt="">
-                    <h3>Application Development</h3>
-                    <p>We design the application for desktop/laptop, tablet and smartphone as per user requirements.</p>
-                </div>
+    <!-- Contact Page -->
+    <section id="contact" class="page contact-page">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p>Get in touch with me for collaborations or just a friendly hello</p>
             </div>
         </div>
 
+        <section>
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>Feel free to reach out to me for any questions or opportunities. I'm always open to
+                            discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Lalitpur-24, Nepal</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>callmegnabin@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+977-9860637751</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send Message</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7604.347126806422!2d85.32677039999997!3d27.618543199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb176b47f72e53%3A0x5075fb8e3638c5d7!2sDhapakhel%2C%20Lalitpur%2044700!5e1!3m2!1sen!2snp!4v1764349027340!5m2!1sen!2snp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <!--------------contact section----------->
-
-    <div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h2 class="sub-title">Get in Touch:</h2>
-        <p><i class="fa-solid fa-envelope"></i>Callmegnabin@gmail.com</p>
-        <p>  <i class="fa-solid fa-location-dot"></i>Dhapakhel, Lalitpur-24, Nepal </p>
-        <p> <i class="fa-solid fa-square-phone"></i>+977-9860637751</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=100008483258777" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <i class="fa-brands fa-square-twitter"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nabin-ghimire-a22745239/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <a href="https://github.com/Nabin593" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Nabin Ghimire</h3>
+                    <p>A passionate web developer and designer creating amazing digital experiences that help businesses
+                        grow.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1NsTbnys4b/" class="social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nabin.ghimire4?igsh=anV4MnM0cnd2ZjJ3" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nabin-ghimire-224b2b298?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>Lalitpur-24, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>callmegnabin@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>+977-9860637751</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Nabin Ghimire. All Rights Reserved.</p>
+            </div>
         </div>
-      </div>
+    </footer>
 
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
-      </div>
-    </div>
-  </div>
-</div>
-	 <div class="copyright">
-      <p>
-        Copyright ©2023 Nabin Ghimire.
-      </p>
-    </div>
-	
-
-
- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script></script>
-    <script>
-        var typingEffect = new Typed(".multiText",{
-            strings : ["developer","designer","youtuber"],
-            loop: true,
-            typeSpeed : 100,
-            backSpeed : 80,
-            backDelay : 1500
-        })
-    </script>
-
-
-
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxn9jdsTSPbfVUGcv2LrAMp61XtgERp3jshRoLCLnNw_LfMjrk02vc3J963pKtjnx1r6g/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-
-
-
-
-    <!------------------JavaScript code for toggle menu------------------>
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
 
 </body>
+<script src="js/script.js"></script>
+
 </html>
